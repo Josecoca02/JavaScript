@@ -25,5 +25,5 @@ window.alert("Edad incorecta");
 edad = parseInt (prompt("Ingrese su edad"));
 }
 
-mesaje="Edad para categoria";
+mesaje=0("Edad para categoria");
 
