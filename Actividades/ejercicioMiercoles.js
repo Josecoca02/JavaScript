@@ -7,13 +7,8 @@
  Opción 2: sin usar el método splice. Solamente se pueden usar push() o unShift().
  Opción 3: sin usar splice ni unShift. Solamente se puede usar push(). */
 
-var parrafo = new Array("levanto ", "todas", "las", "mañanas", "Me", "a", "7");
-function mostrarNros(arreglo) {
-    arreglo.forEach(palabra => {
-        if (!isNaN(palabra)) {
-            console.log(palabra);
-        }
-    });
-}
+ let frutas = ["Manzana", "Banana"]
+
+ console.log(frutas.length)
 
 
