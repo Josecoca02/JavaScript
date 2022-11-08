@@ -1,0 +1,23 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20vh;
+}
+
+.boton  {
+    background-color: aqua;
+    font-size: xx-large;
+
+    color: purple;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: purple;
+    border-width: 2px;
+    height: 50px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    /* hace que el texto de una caja se centre    */
+}
