@@ -1,0 +1,73 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    
+    #container, #mensaje {
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:transparent;
+    
+    /* para que se superpongan imagen y mensaje */
+    position:absolute;
+    top:0;
+    left:0;
+    
+    }
+    
+    
+    img {
+    width:100%;
+    height:99%;
+    object-fit:cover;
+    }
+    
+    p {
+    display:table-cell;
+    height:25%;
+    width:80%;
+    margin:auto;
+    text-align:center;
+    vertical-align:middle;
+    }
+    
+    #error {
+    display:none;
+    
+    }
+    
+    #saludos {
+    /* que se vea la imagen que está debajo */
+    background-color:rgba(250, 2, 2, 0.8);
+    border-radius:5vw;
+    
+    /* que la letra se vea bien */
+    color:green;
+    font-weight:bold;
+    font-size:2em;
+    font-style:italic;
+    text-shadow:1px 2px goldenrod;
+    
+    /* centrado vertical */
+    display:table-cell;
+    vertical-align:middle;
+    
+    
+    /* display:none; */
+    
+    }
+    
+    @media (orientation:landscape) {
+    img, #mensaje {
+    display:none;
+    }
+    
+    #error {
+    display:block;
+    
+    }
+    }
