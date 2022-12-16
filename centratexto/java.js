@@ -1,0 +1,55 @@
+
+const myTimeout = setTimeout(mostrarSaludo, 3000);
+
+function mostrarSaludo() {
+  document.getElementById("saludos").style.visibility="visible";
+}
+
+
+
+
+let body = document.querySelector("body");
+body.addEventListener("click", ocultarSaludo);
+
+function ocultarSaludo() {
+    document.getElementById("saludos").style.visibility="visible";
+    document.getElementById("añonuevo").style.visibility="visible";
+    document.getElementById("navidad").style.visibility="hidden";
+    document.getElementById("papanoel").style.transform = "scaleX(-1)";
+    document.getElementById("reyesmagos").style.transform = "scaleX(-1)";
+    musica.play();
+
+  }
+
+
+  
+  function mostrarSaludo() {
+  document.getElementById("saludos").style.visibility="visible";
+  }
+  
+ 
+  
+  const crearNeive = () => {
+      let copo = document.createElement('i')
+      let x = innerWidth * Math.random()
+      let size = (Math.random() * 8) + 2
+      let z = Math.round(Math.random()) * 100
+      let delay = Math.random() * 5
+      let anima = (Math.random() * 10) + 5
+  
+      copo.style.left = x + 'px'
+      copo.style.width = size + 'px'
+      copo.style.height = size + 'px'
+      copo.style.zIndex = z
+      copo.style.animationDelay = delay + 's'
+      copo.style.animationDuration = anima + 's'
+  
+      body.appendChild(copo)
+  
+      setTimeout(() => {
+          copo.remove()
+      }, anima * 1000)
+  }
+  
+  setInterval(crearNeive, 50);
+  
